@@ -7,8 +7,7 @@ import {Base64} from "@openzeppelin/contracts/utils/Base64.sol";
 import {console} from "forge-std/console.sol";
 
 contract DeployMoodNft is Script {
-    uint256 public DEFAULT_ANVIL_PRIVATE_KEY =
-        0x8b3a350cf5c34c9194ca85829a2df0ec3153be0318b5e2d3348e872092edffba;
+  
 
     function run() external returns (MoodNft) {
         string memory sadSvg = vm.readFile("./images/dynamicNft/sad.svg");
